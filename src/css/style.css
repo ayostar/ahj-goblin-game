@@ -1,0 +1,84 @@
+:root {
+  --cell-size: 130px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+.container-game {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gameboard {
+  display: grid;
+  gap: 2px;
+  border: 1px solid #000;
+}
+
+.score-board {
+  background-color: rgb(252, 231, 162);
+  font-size: 40px;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hit-counter,
+.miss-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miss-counter {
+  margin-top: 10px;
+}
+
+.hit-number,
+.miss-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+  background-color: rgba(223, 154, 148, 0.25);
+  width: 60px;
+  height: 60px;
+}
+
+.hit-counter {
+  color: green;
+}
+.miss-counter {
+  color: red;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51, 114, 31);
+  border: 1px solid #000;
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.goblin {
+  background-image: url("../img/goblin.png");
+  background-repeat: no-repeat;
+  cursor: url("../img/hammer92_113.png"), pointer;
+}
+
+img {
+  display: block;
+}
