@@ -89,7 +89,7 @@ export default class GamePlay {
 
   deselectAll() {
     for (const cell of this.cells) {
-      cell.innerHTML = '';
+      cell.classList.remove();
     }
   }
 

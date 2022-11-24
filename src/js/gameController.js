@@ -63,9 +63,7 @@ export default class GameController {
   }
 
   deactivateGoblin() {
-    const goblinActiveCell = [...this.gamePlay.cells].find((n) =>
-      n.classList.contains('goblin'),
-    );
+    const goblinActiveCell = [...this.gamePlay.cells].find((n) => n.classList.contains('goblin'));
     if (goblinActiveCell) {
       goblinActiveCell.classList.remove('goblin');
     }
